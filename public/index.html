@@ -1,40 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <!--Start Porto-->
+  <!-- Web Fonts  -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet"
+    type="text/css">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="%PUBLIC_URL%/porto/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/porto/vendor/font-awesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/porto/vendor/animate/animate.min.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/porto/vendor/simple-line-icons/css/simple-line-icons.min.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/porto/vendor/owl.carousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/porto/vendor/owl.carousel/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/porto/vendor/magnific-popup/magnific-popup.min.css">
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet"href="%PUBLIC_URL%/porto/css/theme.css">
+  <link rel="stylesheet"href="%PUBLIC_URL%/porto/css/theme-elements.css">
+  <link rel="stylesheet"href="%PUBLIC_URL%/porto/css/theme-blog.css">
+  <link rel="stylesheet"href="%PUBLIC_URL%/porto/css/theme-shop.css">
+
+  <!-- Demo CSS -->
+
+
+  <!-- Skin CSS -->
+  <link rel="stylesheet"href="%PUBLIC_URL%/porto/css/skins/default.css">
+
+  <!-- Theme Custom CSS -->
+  <link rel="stylesheet"href="%PUBLIC_URL%/porto/css/custom.css">
+
+  <!-- Head Libs -->
+  <script src="%PUBLIC_URL%/porto/vendor/modernizr/modernizr.min.js"></script>
+  <!-- End Port -->
+
+
+  <!-- Start Workwise -->
+  <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/workwise/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/workwise/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/workwise/css/line-awesome.css">
+  <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/workwise/css/line-awesome-font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/workwise/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/workwise/lib/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/workwise/lib/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/workwise/css/style.css">
+  <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/workwise/css/responsive.css">
+  <!-- End Workwise -->
+
+  <title>React App</title>
+</head>
+
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="root"></div>
+
+  <!-- Start Porto -->
+  <!-- Vendor -->
+  <script src="%PUBLIC_URL%/porto/vendor/jquery/jquery.min.js"></script>
+  <script src="%PUBLIC_URL%/porto/vendor/jquery.appear/jquery.appear.min.js"></script>
+  <script src="%PUBLIC_URL%/porto/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="%PUBLIC_URL%/porto/vendor/jquery-cookie/jquery-cookie.min.js"></script>
+  <script src="%PUBLIC_URL%/porto/vendor/popper/umd/popper.min.js"></script>
+  <script src="%PUBLIC_URL%/porto/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="%PUBLIC_URL%/porto/vendor/common/common.min.js"></script>
+  <script src="%PUBLIC_URL%/porto/vendor/jquery.validation/jquery.validation.min.js"></script>
+  <script src="%PUBLIC_URL%/porto/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+  <script src="%PUBLIC_URL%/porto/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+  <script src="%PUBLIC_URL%/porto/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+  <script src="%PUBLIC_URL%/porto/vendor/isotope/jquery.isotope.min.js"></script>
+  <script src="%PUBLIC_URL%/porto/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="%PUBLIC_URL%/porto/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="%PUBLIC_URL%/porto/vendor/vide/vide.min.js"></script>
+
+  <!-- Theme Base, Components and Settings -->
+  <script src="%PUBLIC_URL%/porto/js/theme.js"></script>
+
+  <!-- Current Page Vendor and Views -->
+  <script src="%PUBLIC_URL%/porto/js/views/view.contact.js"></script>
+
+  <!-- Theme Custom -->
+  <script src="%PUBLIC_URL%/porto/js/custom.js"></script>
+
+  <!-- Theme Initialization Files -->
+  <script src="%PUBLIC_URL%/porto/js/theme.init.js"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+  <script>
+
+    /*
+    Map Settings
+  
+      Find the Latitude and Longitude of your address:
+        - http://universimmedia.pagesperso-orange.fr/geo/loc.htm
+        - http://www.findlatitudeandlongitude.com/find-address-from-latitude-and-longitude/
+  
+    */
+
+    // Map Markers
+    var mapMarkers = [{
+      address: "New York, NY 10017",
+      html: "<strong>New York Office</strong><br>New York, NY 10017",
+      icon: {
+        image: "img/pin.png",
+        iconsize: [26, 46],
+        iconanchor: [12, 46]
+      },
+      popup: true
+    }];
+
+    // Map Initial Location
+    var initLatitude = 40.75198;
+    var initLongitude = -73.96978;
+
+    // Map Extended Settings
+    var mapSettings = {
+      controls: {
+        draggable: (($.browser.mobile) ? false : true),
+        panControl: true,
+        zoomControl: true,
+        mapTypeControl: true,
+        scaleControl: true,
+        streetViewControl: true,
+        overviewMapControl: true
+      },
+      scrollwheel: false,
+      markers: mapMarkers,
+      latitude: initLatitude,
+      longitude: initLongitude,
+      zoom: 16
+    };
+
+    var map = $('#googlemaps').gMap(mapSettings);
+
+    // Map text-center At
+    var mapCenterAt = function (options, e) {
+      e.preventDefault();
+      $('#googlemaps').gMap("centerAt", options);
+    }
+
+  </script>
+  <!-- End Porto -->
+
+
+
+    <!-- Start Workwise -->
+    <script type="text/javascript" src="%PUBLIC_URL%/workwise/js/jquery.min.js"></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/workwise/js/popper.js"></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/workwise/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/workwise/lib/slick/slick.min.js"></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/workwise/js/script.js"></script>
+  <!-- End Workwise -->
+</body>
+
 </html>
